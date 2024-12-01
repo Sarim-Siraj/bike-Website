@@ -145,7 +145,7 @@ for(var brands in bikes){
 
 function selectBrand(){
      selectedBrand= event.target.value
-     productSelect.innerHTML=""
+     productSelect.innerHTML=`<option disabled selected value="">Select the Model</option>`
     for(var products in bikes[selectedBrand]){
         
       productSelect.innerHTML += `
